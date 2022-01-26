@@ -1,8 +1,8 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 
-import Exercise1 from './Exercise1';
-import Exercise2 from './Exercise2';
+import { Exercise1 } from './Exercise1';
+import { Exercise2 } from './Exercise2';
 import Exercise3 from './Exercise3';
 
 const Stack = createNativeStackNavigator();
