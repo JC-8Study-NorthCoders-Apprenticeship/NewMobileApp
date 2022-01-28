@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button, View, Text, ScrollView } from 'react-native';
+import { ScrollView } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -9,19 +9,39 @@ import { stageRoutes } from './_components/stage-routes';
 
 const menu = [
   {
-    title: 'Chapter 1: Exercise1',
+    title: 'Chapter 1: Orientation',
     icon: 'numeric-1-box',
-    screen: 'Exercise1',
+    screen: 'Orientation',
   },
   {
-    title: 'Chapter 2: Exercise2',
+    title: 'Chapter 2: Crew are you?',
     icon: 'numeric-2-box',
-    screen: 'Exercise2',
+    screen: 'CrewManifest',
   },
   {
-    title: 'Chapter 3: Exercise3',
+    title: 'Chapter 3: A well-stocked station',
     icon: 'numeric-3-box',
-    screen: 'Exercise3',
+    screen: 'Inventory',
+  },
+  {
+    title: 'Chapter 4: Bridge to security',
+    icon: 'numeric-4-box',
+    screen: 'KeepOut',
+  },
+  {
+    title: 'Chapter 5: Incoming distress call, sir!',
+    icon: 'numeric-5-box',
+    screen: 'DistressCalls',
+  },
+  {
+    title: 'Chapter 6: Run a level five diagnostic',
+    icon: 'numeric-6-box',
+    screen: 'Diagnostics',
+  },
+  {
+    title: 'Chapter 7: Budget cuts!',
+    icon: 'numeric-7-box',
+    screen: 'Canteen',
   },
 ];
 
