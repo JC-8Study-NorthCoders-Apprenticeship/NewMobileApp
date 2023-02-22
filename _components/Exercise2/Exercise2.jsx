@@ -1,10 +1,17 @@
 import React from 'react';
 
-import { SafeAreaView, Text, View, StyleSheet , FlatList, Pressable } from 'react-native';
+import {
+  SafeAreaView,
+  Text,
+  View,
+  StyleSheet,
+  FlatList,
+  Pressable,
+} from 'react-native';
 import { Card } from 'react-native-paper';
 
 // This is the data containing the crew members
-import { names } from '../server/data/crew';
+import { names } from '../../server/data/crew';
 
 // This is our pre-built CachedImage component - feel free to take a look at the implementation
 // import { CachedImage } from './third-party-components/CachedImage';
@@ -18,17 +25,14 @@ const Item = ({ name }) => (
   </View>
 );
 
-
 export const Exercise2 = () => {
-  const renderItem = ({ item }) => (
-    <Item name={item.name} />
-  );
+  const renderItem = ({ item }) => <Item name={item.name} />;
   return (
     <SafeAreaView style={styles.mainDiv}>
       <FlatList
         data={names}
         renderItem={renderItem}
-        keyExtractor={item => item.name}
+        keyExtractor={(item) => item.name}
       />
     </SafeAreaView>
   );
@@ -44,5 +48,5 @@ const styles = StyleSheet.create({
     color: 'red',
     fontSize: 23,
     marginTop: 20,
-  },  
+  },
 });

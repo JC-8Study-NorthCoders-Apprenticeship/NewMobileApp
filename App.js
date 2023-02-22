@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button, View, Text, ScrollView } from 'react-native';
+import { ScrollView } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -22,6 +22,11 @@ const menu = [
     title: 'Chapter 3: Exercise3',
     icon: 'numeric-3-box',
     screen: 'Exercise3',
+  },
+  {
+    title: 'Chapter 6: Exercise6',
+    icon: 'numeric-6-box',
+    screen: 'Exercise6',
   },
 ];
 
@@ -49,7 +54,11 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Northcoders - Intro to Mobile' }} />
+        <Stack.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{ title: 'Northcoders - Intro to Mobile' }}
+        />
         {stageRoutes()}
       </Stack.Navigator>
     </NavigationContainer>
